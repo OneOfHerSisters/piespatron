@@ -4,29 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pies Patron</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
-      background: #fff8f0;
+      background: #f7f9fc;
       color: #333;
+      line-height: 1.6;
     }
 
     header {
-      background: #ffcc99;
-      padding: 40px 20px;
+      background: linear-gradient(135deg, #ffecd2, #fcb69f);
       text-align: center;
+      padding: 50px 20px;
+      border-bottom: 2px solid #f2a6c2;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      border-radius: 0 0 20px 20px;
     }
+
     header h1 {
       margin: 0;
       font-size: 2.5rem;
-      color: #663300;
+      color: #6b3e5b;
     }
+
     header p {
       margin: 10px 0 0;
-      font-size: 1.2rem;
-      color: #996633;
+      font-size: 1rem;
+      color: #8a4e7e;
     }
 
     main {
@@ -34,40 +41,68 @@
       margin: 40px auto;
       padding: 0 20px;
     }
+
     section {
-      margin-bottom: 40px;
+      background: #fff;
+      padding: 25px 30px;
+      margin-bottom: 30px;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.05);
     }
+
     section h2 {
-      font-size: 2rem;
-      color: #cc6600;
-      margin-bottom: 10px;
+      font-size: 1.8rem;
+      color: #d974a0;
+      margin-bottom: 15px;
     }
-    section p {
-      font-size: 1.1rem;
-      line-height: 1.6;
+
+    section p, section ul {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    ul {
+      padding-left: 20px;
+      list-style-type: disc;
     }
 
     .cta {
-      display: block;
-      width: fit-content;
-      margin: 30px auto;
+      display: inline-block;
+      margin: 20px auto;
       padding: 15px 30px;
-      background-color: #ff9966;
+      background-color: #f58cae;
       color: #fff;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
       border-radius: 10px;
-      transition: background 0.3s ease;
+      box-shadow: 0 4px 15px rgba(245,140,174,0.4);
+      transition: all 0.3s ease;
     }
+
     .cta:hover {
-      background-color: #cc6633;
+      background-color: #d96390;
+      box-shadow: 0 6px 20px rgba(217,99,144,0.5);
     }
 
     footer {
-      background: #ffcc99;
+      background: #ffecd2;
       text-align: center;
       padding: 20px;
-      color: #663300;
+      color: #6b3e5b;
+      border-top: 2px solid #f2a6c2;
+      margin-top: 50px;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin: 15px 0;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      section h2 { font-size: 1.5rem; }
+      section p, section ul { font-size: 0.95rem; }
     }
   </style>
 </head>
@@ -75,23 +110,53 @@
 
 <header>
   <h1>Pies Patron 🐾</h1>
-  <p>Twój wierny towarzysz i strażnik</p>
+  <p>Ukraiński pies-saper i symbol nadziei</p>
 </header>
 
 <main>
   <section>
-    <h2>O Psu Patronie</h2>
+    <h2>Informacje ogólne</h2>
     <p>
-      Pies Patron to odważny i lojalny pies, który zawsze chroni swojego właściciela.
-      Uwielbia przygody, spacery po lesie i wspólne zabawy w parku.
+      Patron to pies rasy <strong>Jack Russell Terrier</strong>, samiec urodzony 20 lipca 2019 w Czernihowie, Ukraina.  
+      Jego właścicielem jest Michał Iljew, a Patron pracuje jako pies-saper. Jego waga ok. 4 kg pozwala wykorzystywać go do wykrywania min przeciwpiechotnych.
+    </p>
+    <p>
+      Patron zdobył międzynarodową sławę podczas inwazji Rosji na Ukrainę i jest symbolem Międzynarodowego Centrum Koordynacji ds. Humanitarnego Rozminowania.
     </p>
   </section>
 
   <section>
-    <h2>Dlaczego warto go poznać?</h2>
+    <h2>Biografia</h2>
     <p>
-      Dzięki swojemu sprytowi i energii, Pies Patron potrafi rozbawić każdego.  
-      Jest idealnym towarzyszem dla rodzin i osób szukających wiernego przyjaciela.
+      W 2020 roku Michał Iljew kupił Pana Patrona i rozpoczął jego szkolenie jako psa do wykrywania materiałów wybuchowych. Początkowo miał zostać wystawowym psem, jednak w wieku 6 miesięcy rozpoczęto jego szkolenie do pracy z materiałami wybuchowymi.
+    </p>
+    <p>
+      Przed rozpoczęciem wojny Patrona planowano wysłać jako psa-wolontariusza do strefy operacji, ale po inwazji zaczęto go wykorzystywać w rozminowywaniu terenów w obwodzie czernihowskim. Do 8 maja 2022 roku Patron pomógł wykryć 236 urządzeń wybuchowych.
+    </p>
+  </section>
+
+  <section>
+    <h2>Nagrody i wyróżnienia</h2>
+    <ul>
+      <li>„Złota Łapa” – Irlandzki klub kynologiczny</li>
+      <li>Palm DogManitarian Award – Cannes, 2022</li>
+      <li>Tytuł „Pies dobrej woli” od UNICEF, 2022</li>
+      <li>Odznaczenie przez prezydenta Ukrainy Wołodymyra Zełenskiego</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Popularność w kulturze</h2>
+    <p>
+      Patron stał się symbolem patriotyzmu ukraińskiego i talizmanem dla saperów. Jest bohaterem memów, filmików edukacyjnych o bezpieczeństwie przy minach, a także pojawia się w mediach społecznościowych:
+    </p>
+    <ul>
+      <li>Instagram: ponad 389 000 obserwujących</li>
+      <li>TikTok: ponad 514 000 obserwujących</li>
+      <li>Twitter: ponad 70 000 obserwujących</li>
+    </ul>
+    <p>
+      W 2023 roku powstał serial animowany o Piesku Patronie, a w sklepach dostępne są zabawki i gadżety z jego wizerunkiem. Ukraińska poczta wydała także serię znaczków z jego wizerunkiem na cele charytatywne.
     </p>
   </section>
 
@@ -99,7 +164,7 @@
 
   <section id="kontakt">
     <h2>Kontakt</h2>
-    <p>Chcesz poznać Psa Patrona osobiście? Napisz do nas na email: <strong>piespatron@example.com</strong></p>
+    <p>Napisz do nas na email: <strong>piespatron@example.com</strong></p>
   </section>
 </main>
 
