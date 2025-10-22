@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <rect width="200" height="60" fill="#0057B7"/>
+  <circle cx="30" cy="30" r="20" fill="#FFD700" stroke="#000" stroke-width="2"/>
+  <circle cx="25" cy="25" r="2" fill="#000"/>
+  <circle cx="35" cy="25" r="2" fill="#000"/>
+  <ellipse cx="30" cy="32" rx="3" ry="2" fill="#000"/>
+  <path d="M15 40 Q30 35 45 40" stroke="#FFD700" stroke-width="3" fill="none"/>
+  <text x="60" y="25" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFD700">PATRON</text>
+  <text x="60" y="40" font-family="Arial, sans-serif" font-size="12" fill="#FFD700">Bohater Ukrainy</text>
+</svg>
+

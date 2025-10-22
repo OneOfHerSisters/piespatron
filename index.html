@@ -1,176 +1,762 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pies Patron</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f7f9fc;
-      color: #333;
-      line-height: 1.6;
-    }
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Pies Patron - Oficjalne Portfolio | Bohater Ukrainy | Saper i Symbol Nadziei</title>
+  <meta content="Oficjalne portfolio Psa Patrona - bohatera Ukrainy, psa-sapera z DSNS, który uratował tysiące żyć. Symbol nadziei i niezłomności ukraińskiego narodu. Urodzony 20 lipca 2019, służy w Czernihowie." name="description">
+  <meta content="pies patron, ukraina, bohater, saper, dsns, czernihów, rozminowywanie, psy ratownicze, ukraina wojna, symbol nadziei, patron dog ukraine" name="keywords">
+  <meta name="author" content="Pies Patron - DSNS Ukrainy">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Pies Patron - Bohater Ukrainy">
+  <meta property="og:description" content="Oficjalne portfolio Psa Patrona - bohatera Ukrainy, psa-sapera z DSNS">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://patron.dog">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pies Patron - Bohater Ukrainy">
+  <meta name="twitter:description" content="Oficjalne portfolio Psa Patrona - bohatera Ukrainy, psa-sapera z DSNS">
 
-    header {
-      background: linear-gradient(135deg, #ffecd2, #fcb69f);
-      text-align: center;
-      padding: 50px 20px;
-      border-bottom: 2px solid #f2a6c2;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-      border-radius: 0 0 20px 20px;
-    }
+  <!-- Favicons -->
+  <link href="assets/img/favicon.svg" rel="icon" type="image/svg+xml">
+  <link href="assets/img/favicon.svg" rel="apple-touch-icon">
 
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      color: #6b3e5b;
-    }
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    header p {
-      margin: 10px 0 0;
-      font-size: 1rem;
-      color: #8a4e7e;
-    }
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-    main {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
 
-    section {
-      background: #fff;
-      padding: 25px 30px;
-      margin-bottom: 30px;
-      border-radius: 15px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.05);
-    }
-
-    section h2 {
-      font-size: 1.8rem;
-      color: #d974a0;
-      margin-bottom: 15px;
-    }
-
-    section p, section ul {
-      font-size: 1rem;
-      color: #555;
-    }
-
-    ul {
-      padding-left: 20px;
-      list-style-type: disc;
-    }
-
-    .cta {
-      display: inline-block;
-      margin: 20px auto;
-      padding: 15px 30px;
-      background-color: #f58cae;
-      color: #fff;
-      text-decoration: none;
-      font-weight: 600;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(245,140,174,0.4);
-      transition: all 0.3s ease;
-    }
-
-    .cta:hover {
-      background-color: #d96390;
-      box-shadow: 0 6px 20px rgba(217,99,144,0.5);
-    }
-
-    footer {
-      background: #ffecd2;
-      text-align: center;
-      padding: 20px;
-      color: #6b3e5b;
-      border-top: 2px solid #f2a6c2;
-      margin-top: 50px;
-    }
-
-    img {
-      max-width: 100%;
-      border-radius: 12px;
-      margin: 15px 0;
-    }
-
-    @media (max-width: 600px) {
-      header h1 { font-size: 2rem; }
-      section h2 { font-size: 1.5rem; }
-      section p, section ul { font-size: 0.95rem; }
-    }
-  </style>
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
-<body>
 
-<header>
-  <h1>Pies Patron 🐾</h1>
-  <p>Ukraiński pies-saper i symbol nadziei</p>
-</header>
+<body class="index-page">
 
-<main>
-  <section>
-    <h2>Informacje ogólne</h2>
-    <p>
-      Patron to pies rasy <strong>Jack Russell Terrier</strong>, samiec urodzony 20 lipca 2019 w Czernihowie, Ukraina.  
-      Jego właścicielem jest Michał Iljew, a Patron pracuje jako pies-saper. Jego waga ok. 4 kg pozwala wykorzystywać go do wykrywania min przeciwpiechotnych.
-    </p>
-    <p>
-      Patron zdobył międzynarodową sławę podczas inwazji Rosji na Ukrainę i jest symbolem Międzynarodowego Centrum Koordynacji ds. Humanitarnego Rozminowania.
-    </p>
-  </section>
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
 
-  <section>
-    <h2>Biografia</h2>
-    <p>
-      W 2020 roku Michał Iljew kupił Pana Patrona i rozpoczął jego szkolenie jako psa do wykrywania materiałów wybuchowych. Początkowo miał zostać wystawowym psem, jednak w wieku 6 miesięcy rozpoczęto jego szkolenie do pracy z materiałami wybuchowymi.
-    </p>
-    <p>
-      Przed rozpoczęciem wojny Patrona planowano wysłać jako psa-wolontariusza do strefy operacji, ale po inwazji zaczęto go wykorzystywać w rozminowywaniu terenów w obwodzie czernihowskim. Do 8 maja 2022 roku Patron pomógł wykryć 236 urządzeń wybuchowych.
-    </p>
-  </section>
+    <div class="profile-img">
+      <img src="assets/img/patron-profile.jpg" alt="Pies Patron" class="img-fluid rounded-circle">
+    </div>
 
-  <section>
-    <h2>Nagrody i wyróżnienia</h2>
-    <ul>
-      <li>„Złota Łapa” – Irlandzki klub kynologiczny</li>
-      <li>Palm DogManitarian Award – Cannes, 2022</li>
-      <li>Tytuł „Pies dobrej woli” od UNICEF, 2022</li>
-      <li>Odznaczenie przez prezydenta Ukrainy Wołodymyra Zełenskiego</li>
-    </ul>
-  </section>
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <img src="assets/img/logo.svg" alt="Pies Patron Logo" class="logo-img">
+      <h1 class="sitename">Pies Patron</h1>
+    </a>
 
-  <section>
-    <h2>Popularność w kulturze</h2>
-    <p>
-      Patron stał się symbolem patriotyzmu ukraińskiego i talizmanem dla saperów. Jest bohaterem memów, filmików edukacyjnych o bezpieczeństwie przy minach, a także pojawia się w mediach społecznościowych:
-    </p>
-    <ul>
-      <li>Instagram: ponad 389 000 obserwujących</li>
-      <li>TikTok: ponad 514 000 obserwujących</li>
-      <li>Twitter: ponad 70 000 obserwujących</li>
-    </ul>
-    <p>
-      W 2023 roku powstał serial animowany o Piesku Patronie, a w sklepach dostępne są zabawki i gadżety z jego wizerunkiem. Ukraińska poczta wydała także serię znaczków z jego wizerunkiem na cele charytatywne.
-    </p>
-  </section>
+    <div class="social-links text-center">
+      <a href="https://www.instagram.com/patron_dsns/" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+      <a href="https://dsns.gov.ua" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+    </div>
 
-  <a href="#kontakt" class="cta">Skontaktuj się z nami</a>
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Strona główna</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> O mnie</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> CV</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Usługi</a></li>
+        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Menu</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="#">Opcja 1</a></li>
+            <li class="dropdown"><a href="#"><span>Podmenu</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Podmenu 1</a></li>
+                <li><a href="#">Podmenu 2</a></li>
+                <li><a href="#">Podmenu 3</a></li>
+                <li><a href="#">Podmenu 4</a></li>
+                <li><a href="#">Podmenu 5</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Opcja 2</a></li>
+            <li><a href="#">Opcja 3</a></li>
+            <li><a href="#">Opcja 4</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Kontakt</a></li>
+      </ul>
+    </nav>
 
-  <section id="kontakt">
-    <h2>Kontakt</h2>
-    <p>Napisz do nas na email: <strong>piespatron@example.com</strong></p>
-  </section>
-</main>
+  </header>
 
-<footer>
-  &copy; 2025 Pies Patron. Wszystkie prawa zastrzeżone.
-</footer>
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/patron-hero-bg.jpg" alt="Pies Patron w akcji" data-aos="fade-in" class="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Pies Patron</h2>
+        <p>Jestem <span class="typed" data-typed-items="Symbolem Ukrainy, Psem-bohaterem, Poszukiwaczem min, Przyjacielem dzieci">Symbolem Ukrainy</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>O Psie Patronie</h2>
+        <p>Pies Patron - symbol niezłomności i nadziei ukraińskiego narodu. Ten odważny jack russell terrier stał się prawdziwym bohaterem, pomagając saperom Państwowej Służby Ratowniczej Ukrainy w rozminowywaniu terenów.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/patron-about.jpg" class="img-fluid" alt="Pies Patron w służbie">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>Pies-bohater &amp; Symbol Ukrainy.</h2>
+            <p class="fst-italic py-3">
+              Pies Patron to nie tylko pies, to symbol męstwa, nadziei i niezłomnego ducha ukraińskiego narodu w trudnych czasach.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Rasa:</strong> <span>Jack Russell Terrier</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Służba:</strong> <span>DSNS Ukrainy</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Specjalizacja:</strong> <span>Poszukiwanie min</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Miejsce służby:</strong> <span>Czernihów, Ukraina</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Wiek:</strong> <span>6 lat</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Data urodzenia:</strong> <span>20 lipca 2019</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Nagrody:</strong> <span>Order "Za zasługi"</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Dostępność:</strong> <span>Zawsze gotowy pomóc</span></li>
+                </ul>
+              </div>
+            </div>
+            <p class="py-3">
+              Pies Patron pracuje w składzie grupy pirotechnicznej DSNS Ukrainy od 2021 roku. Pomaga saperom znajdować materiały wybuchowe i miny, ratując tym samym życie ludzi. Jego praca stała się symbolem nadziei i niezłomności ukraińskiego narodu w walce o wolność i niepodległość. Patron przeszedł specjalistyczne szkolenie w zakresie wykrywania materiałów wybuchowych i współpracy z saperami. Jest aktywnym członkiem zespołu ratowniczego w Czernihowie, gdzie uczestniczy w misjach rozminowywania terenów mieszkalnych i przemysłowych.
+            </p>
+            <p class="py-3">
+              W ciągu swojej służby Patron pomógł w wykryciu setek min i materiałów wybuchowych, przyczyniając się do ratowania tysięcy ludzkich żyć. Jego odwaga i poświęcenie zostały docenione przez prezydenta Ukrainy Wołodymyra Zełenskiego, który wręczył mu specjalną nagrodę. Patron stał się międzynarodowym symbolem ukraińskiej determinacji i bohaterstwa w obliczu agresji.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1000" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Tysiące ocalonych żyć</strong> <span>dzięki pracy Patrona</span></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="200" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Setki znalezionych min</strong> <span>w czasie służby</span></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="10000" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Tysiące godzin służby</strong> <span>na rzecz Ukrainy</span></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1000" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Tysiące dni męstwa</strong> <span>w walce o pokój</span></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Umiejętności</h2>
+        <p>Niezbędne umiejętności do wykonywania pracy sapera i ratowania życia</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>Węch</span> <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Posłuszeństwo</span> <i class="val">95%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Wytrzymałość</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>Odwaga</span> <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Współpraca</span> <i class="val">95%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Intuicja</span> <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>CV</h2>
+        <p>Historia służby i osiągnięć Psa Patrona w służbie ratowniczej Ukrainy</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Podsumowanie</h3>
+
+            <div class="resume-item pb-0">
+              <h4>Pies Patron</h4>
+              <p><em>Pies ratowniczy specjalizujący się w wykrywaniu materiałów wybuchowych. Pracuje w DSNS Ukrainy od 2021 roku, uczestnicząc w misjach rozminowywania terenów w Czernihowie i okolicach.</em></p>
+              <ul>
+                <li>Czernihów, Ukraina</li>
+                <li>DSNS Ukrainy</li>
+                <li>hello@patron.dog</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Edukacja</h3>
+            <div class="resume-item">
+              <h4>Specjalistyczne szkolenie psów ratowniczych</h4>
+              <h5>2021 - 2022</h5>
+              <p><em>Centrum Szkolenia DSNS, Kijów, Ukraina</em></p>
+              <p>Intensywne szkolenie w zakresie wykrywania materiałów wybuchowych, współpracy z saperami i pracy w warunkach bojowych. Kurs obejmował naukę rozpoznawania różnych typów min i materiałów wybuchowych.</p>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Podstawowe Szkolenie Psów Ratowniczych</h4>
+              <h5>2020 - 2021</h5>
+              <p><em>Centrum Szkolenia DSNS, Kijów, Ukraina</em></p>
+              <p>Podstawowe umiejętności posłuszeństwa, współpracy z przewodnikiem i przygotowanie do specjalistycznych zadań ratowniczych.</p>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Doświadczenie Zawodowe</h3>
+            <div class="resume-item">
+              <h4>Pies ratowniczy - specjalista ds. wykrywania min</h4>
+              <h5>2022 - Obecnie</h5>
+              <p><em>DSNS Ukrainy, Czernihów, Ukraina</em></p>
+              <ul>
+                <li>Uczestnictwo w misjach rozminowywania terenów mieszkalnych i przemysłowych</li>
+                <li>Współpraca z zespołem saperów w wykrywaniu materiałów wybuchowych</li>
+                <li>Pomoc w ratowaniu życia cywilów poprzez wykrywanie ukrytych min</li>
+                <li>Uczestnictwo w misjach edukacyjnych dla dzieci w szpitalach</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Pies ratowniczy - stażysta</h4>
+              <h5>2021 - 2022</h5>
+              <p><em>DSNS Ukrainy, Kijów, Ukraina</em></p>
+              <ul>
+                <li>Podstawowe szkolenie w zakresie wykrywania materiałów wybuchowych</li>
+                <li>Nauka współpracy z przewodnikiem i zespołem saperów</li>
+                <li>Uczestnictwo w ćwiczeniach i symulacjach misji ratowniczych</li>
+                <li>Przygotowanie do pracy w rzeczywistych warunkach bojowych</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>Najważniejsze osiągnięcia i misje Psa Patrona w służbie ratowniczej Ukrainy</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">Wszystkie</li>
+            <li data-filter=".filter-app">Misje</li>
+            <li data-filter=".filter-product">Osiągnięcia</li>
+            <li data-filter=".filter-branding">Nagrody</li>
+            <li data-filter=".filter-books">Szkolenia</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/patron-mission.jpg" class="img-fluid" alt="Patron misja Ohmatdit">
+                <div class="portfolio-info">
+                  <p>W miejscowości Szestowica w obwodzie czernihowskim 19 kwietnia 2022 r.</p>
+                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/patron-award.jpg" class="img-fluid" alt="Order Za zasługi">
+                <div class="portfolio-info">
+                  <p>Wręczenie nagrody patrona przez prezydenta Zełenskiego podczas spotkania z Justinem Trudeau 8 maja 2022 r.</p>
+                  <a href="assets/img/portfolio/branding-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/patron-medal.jpg" class="img-fluid" alt="Order Za zasługi">
+                <div class="portfolio-info">
+                  <p>Medal Patrona i order jego właściciela</p>
+                  <a href="assets/img/portfolio/branding-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+           
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/patron-goldenpaw.jpg" class="img-fluid" alt="Order Za zasługi">
+                <div class="portfolio-info">
+                  <p>Patron z nagrodą Irlandzkiego Klubu Kynologicznego „Złota Łapa” 23 czerwca 2022 r.</p>
+                  <a href="assets/img/portfolio/branding-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/patron-VFW.jpg" class="img-fluid" alt="Order Za zasługi">
+                <div class="portfolio-info">
+                  <p>List pochwalny amerykańskich organizacji Veterans of Foreign Wars VFW i Bomb Techs Without Borders, którym został uhonorowany Patron</p>
+                  <a href="assets/img/portfolio/branding-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+            
+          
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/patron-training.jpg" class="img-fluid" alt="Szkolenie specjalistyczne">
+                <div class="portfolio-info">
+                  <h4>Szkolenie specjalistyczne</h4>
+                  <p>Patron w Ochmatdet 28 kwietnia 2022 r.</p>
+                  <a href="assets/img/portfolio/books-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/patron-ohmatdit.jpg" class="img-fluid" alt="Szkolenie specjalistyczne">
+                <div class="portfolio-info">
+                  <h4>Szkolenie specjalistyczne</h4>
+                  <p>Patron, talizman pirotechników z Czernihowa, w kijowskim szpitalu dziecięcym „OKHMATDET” podczas wykładu na temat zagrożeń bezpieczeństwa..</p>
+                  <a href="assets/img/portfolio/books-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>App 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Product 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/product-2.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Branding 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/branding-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Books 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>App 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Product 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/product-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Branding 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/branding-3.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Books 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Usługi</h2>
+        <p>Specjalistyczne usługi ratownicze i wykrywania materiałów wybuchowych</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Wykrywanie min</a></h4>
+              <p class="description">Profesjonalne wykrywanie materiałów wybuchowych i min na terenach zagrożonych</p>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Ratownictwo</a></h4>
+              <p class="description">Specjalistyczne usługi ratownicze w sytuacjach kryzysowych i katastrofach</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Szkolenia</a></h4>
+              <p class="description">Profesjonalne szkolenia w zakresie bezpieczeństwa i wykrywania zagrożeń</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Magni Dolores</a></h4>
+              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Nemo Enim</a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+            <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Eiusmod Tempor</a></h4>
+              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Kontakt</h2>
+        <p>Skontaktuj się z nami w sprawie usług ratowniczych</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Adres</h3>
+                  <p>Czernihów, Ukraina</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Napisz do nas</h3>
+                  <p>hello@patron.dog</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.1234567890!2d31.9999!3d51.4999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412d05c8c8c8c8c8%3A0x1234567890abcdef!2sCzernihów%2C%20Ukraina!5e0!3m2!1spl!2spl!4v1676961268712!5m2!1spl!2spl" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Twoje imię</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Twój email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Temat</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Wiadomość</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Ładowanie</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Twoja wiadomość została wysłana. Dziękujemy!</div>
+
+                  <button type="submit">Wyślij wiadomość</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Pies Patron</strong> <span>Wszystkie prawa zastrzeżone</span></p>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a><br>
+        Zdjęcia:<br>
+        1) Autor: <a rel="nofollow" class="external text" href="https://dsns.gov.ua">Dsns.gov.ua</a>, licencja <a href="https://creativecommons.org/licenses/by/4.0" title="Creative Commons Attribution 4.0">CC BY 4.0</a>, źródło: <a href="https://commons.wikimedia.org/w/index.php?curid=117076006">Wikimedia Commons</a>.<br>
+        2) Autor: <a rel="nofollow" class="external text" href="http://www.president.gov.ua/">President.gov.ua</a>, licencja <a href="https://creativecommons.org/licenses/by/4.0" title="Creative Commons Attribution 4.0">CC BY 4.0</a>, źródło: <a href="https://commons.wikimedia.org/w/index.php?curid=117814027">Wikimedia Commons</a>.<br>
+        3) Autor: <a rel="nofollow" class="external text" href="https://dsns.gov.ua">Dsns.gov.ua</a>, licencja <a href="https://creativecommons.org/licenses/by/4.0" title="Creative Commons Attribution 4.0">CC BY 4.0</a>, źródło: <a href="https://commons.wikimedia.org/w/index.php?curid=117491369">Wikimedia Commons</a>.<br>
+        4) Autor: <a rel="nofollow" class="external text" href="https://dsns.gov.ua">Dsns.gov.ua</a>, licencja <a href="https://creativecommons.org/licenses/by/4.0" title="Creative Commons Attribution 4.0">CC BY 4.0</a>, źródło: <a href="https://commons.wikimedia.org/w/index.php?curid=117491332">Wikimedia Commons</a>.
+        5) Autor: <a rel="nofollow" class="external text" href="http://www.president.gov.ua/">President.gov.ua</a>, <a href="https://creativecommons.org/licenses/by/4.0" title="Creative Commons Attribution 4.0">CC BY 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=117814028">Wikimedia Commons</a>
+        6) Autor: <a rel="nofollow" class="external text" href="https://dsns.gov.ua">Dsns.gov.ua</a>, <a href="https://creativecommons.org/licenses/by/4.0" title="Creative Commons Attribution 4.0">CC BY 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=119654222">Wikimedia Commons</a>
+        7) Autor: <a rel="nofollow" class="external text" href="https://dsns.gov.ua">Dsns.gov.ua</a>, <a href="https://creativecommons.org/licenses/by/4.0" title="Creative Commons Attribution 4.0">CC BY 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=120528269">Wikimedia Commons</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
