@@ -1,0 +1,9 @@
+{
+  "name": "piespatron-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sitemap": "node scripts/generate_sitemap.mjs"
+  }
+}
+
