@@ -105,10 +105,7 @@
     });
   }
 
-  /**
-   * Initiate Pure Counter
-   */
-  new PureCounter();
+  // PureCounter removed
 
   /**
    * Animate the skills items on reveal
@@ -127,12 +124,7 @@
     });
   });
 
-  /**
-   * Initiate glightbox
-   */
-  const glightbox = GLightbox({
-    selector: '.glightbox'
-  });
+  // GLightbox removed (no preview links in gallery)
 
   /**
    * Init isotope layout and filters
@@ -167,24 +159,7 @@
 
   });
 
-  /**
-   * Init swiper sliders
-   */
-  function initSwiper() {
-    document.querySelectorAll(".init-swiper").forEach(function(swiperElement) {
-      let config = JSON.parse(
-        swiperElement.querySelector(".swiper-config").innerHTML.trim()
-      );
-
-      if (swiperElement.classList.contains("swiper-tab")) {
-        initSwiperWithCustomPagination(swiperElement, config);
-      } else {
-        new Swiper(swiperElement, config);
-      }
-    });
-  }
-
-  window.addEventListener("load", initSwiper);
+  // Swiper removed
 
   /**
    * Correct scrolling position upon page load for URLs containing hash links.
