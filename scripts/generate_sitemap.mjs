@@ -1,9 +1,9 @@
 import { promises as fs } from "fs";
 import path from "path";
 
-const PRIMARY = process.env.PRIMARY_DOMAIN || "https://username.github.io";
-const BASE = (process.env.BASE_PATH || "").replace(/\/+$/,""); // "" or "/repo-name"
-const ROOT = "."; // project root
+const PRIMARY = process.env.PRIMARY_DOMAIN || "https://oneofhersisters.github.io";
+const BASE = (process.env.BASE_PATH || "/piespatron").replace(/\/+$/,"");
+const ROOT = "."; 
 const TODAY = new Date().toISOString().slice(0,10);
 
 function norm(p){ return p.replace(/\\/g,"/"); }
