@@ -68,8 +68,8 @@ ${urls.map(u => `  <url>
     <priority>${u.priority}</priority>
   </url>`).join("\n")}
 </urlset>`;
-  await fs.writeFile("sitemap.xml", xml.trim()+"\n", "utf-8");
-  console.log("sitemap.xml written with", urls.length, "urls");
+  await fs.writeFile("sitemap_index.xml", xml.trim()+"\n", "utf-8");
+  console.log("sitemap_index.xml written with", urls.length, "urls");
 }
 
 await main();
