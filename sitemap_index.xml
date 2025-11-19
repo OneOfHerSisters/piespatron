@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://oneofhersisters.github.io/piespatron/credits.html</loc>
+    <lastmod>2025-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://oneofhersisters.github.io/piespatron/</loc>
     <lastmod>2025-11-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://oneofhersisters.github.io/piespatron/credits.html</loc>
+    <loc>https://oneofhersisters.github.io/piespatron/index_root.html</loc>
     <lastmod>2025-11-19</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 </urlset>
