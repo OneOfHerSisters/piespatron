@@ -56,12 +56,12 @@ Google Search Console
 - Pierwsze wyniki indeksacji: 2025-10-29
 - Ile stron w indeksie: 2
 - Status: indeksacja rozpoczęta
-- Sitemap dodany: tak
+- Sitemap dodany: tak (tylko w korzeniu domeny: https://oneofhersisters.github.io/sitemap_index.xml)
 
 Bing Webmaster Tools
 - Kiedy dodałam: 2025-11-13
-- Status: 
-- Sitemap dodany: tak
+- Status: działa
+- Sitemap dodany: tak (używam project site sitemap, ale można też użyć korzeniowego)
 
 Google Analytics
 - Od kiedy śledzę: 2025-11-13
@@ -84,6 +84,16 @@ Notatki
 - Co zrobiłam: Sprawdziłam Google Search Console
 - Co się zmieniło: Pojawiły się pierwsze wyniki indeksacji. 28 października była 1 strona w indeksie, teraz 2 strony (index.html i credits.html)
 - Moje wnioski: Google indeksuje obie strony
+
+2025-11-19 - Naprawa problemów z indeksacją w Bing Webmaster Tools
+- Co zrobiłam: Bing zgłaszał problemy z indeksacją strony. Sprawdziłam strukturę sitemap i znalazłam kilka problemów: robots.txt wskazywał na nieprawidłowy URL sitemap (sitemap_index.xml w korzeniu domeny zamiast sitemap.xml w folderze projektu), daty w sitemap były nieaktualne. Utworzyłam prawidłowy plik sitemap.xml w folderze projektu z aktualną datą (2025-11-19), zaktualizowałam robots.txt żeby wskazywał na https://oneofhersisters.github.io/piespatron/sitemap.xml, poprawiłem daty we wszystkich plikach sitemap.
+- Co się zmieniło: Teraz robots.txt wskazuje na prawidłowy sitemap.xml w folderze projektu (/piespatron/sitemap.xml), wszystkie daty są aktualne (2025-11-19), struktura XML jest poprawna. Główny sitemap.xml zawiera obie strony (index.html i credits.html) z prawidłowymi priorytetami i częstotliwością zmian.
+- Moje wnioski: Bing wymaga prawidłowej struktury sitemap i aktualnych dat. Ważne jest, żeby robots.txt wskazywał na prawidłowy URL sitemap. Teraz powinienem zaktualizować sitemap w Bing Webmaster Tools (usunąć starą, dodać nową) i wysłać URL-e do ponownej indeksacji.
+
+2025-11-15 - Przeniesienie sitemap do korzenia domeny
+- Co zrobiłam: Googlebot nie mógł dostać się do sitemap.xml w folderze /piespatron/ (pokazywał "Couldn't fetch"). Bing działał dobrze ze starym sitemap, ale musiałam zmienić bo Google nie mógł go znaleźć. Przeniosłam sitemap do korzenia domeny przez utworzenie user site repozytorium (oneofhersisters.github.io). Najpierw zmieniłam nazwę sitemap.xml na sitemap_index.xml, potem utworzyłam nowy repozytorium dla korzenia domeny i tam umieściłam sitemap.
+- Co się zmieniło: Sitemap jest teraz dostępny pod adresem https://oneofhersisters.github.io/sitemap_index.xml. Zaktualizowałam robots.txt żeby wskazywał tylko na korzeniowy sitemap. Dodałam nowe property w Google Search Console dla korzenia domeny i dodałam tam sitemap. W property dla /piespatron/ nie dodaję sitemap - używam tylko korzeniowego. Bing działa z project site sitemap (można też użyć korzeniowego, ale project site też działa).
+- Moje wnioski: Googlebot powinien teraz łatwiej znaleźć sitemap, bo jest w korzeniu domeny. Korzeniowy sitemap jest głównym - robots.txt wskazuje na niego, więc wszystkie boty go znajdą. Nie trzeba dodawać sitemap w property dla /piespatron/ - korzeniowy wystarczy. DuckDuckGo używa robots.txt który wskazuje na korzeniowy sitemap.
 
 ---
 

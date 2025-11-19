@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://oneofhersisters.github.io/piespatron/sitemap_index.xml
+Sitemap: https://oneofhersisters.github.io/piespatron/sitemap.xml
